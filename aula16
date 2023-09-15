@@ -1,0 +1,12 @@
+const quantidadeDePets = parseInt(prompt("Quantos bichinhos de estimação você tem?"));
+if (quantidadeDePets === 0) {
+  console.log("Que pena! Você pode adotar um pet!");
+} else if (quantidadeDePets > 0) {
+  const nomesDosPets = [];
+  for (let i = 1; i <= quantidadeDePets; i++) {
+    const nomePet = prompt(`Digite o nome do seu pet número ${i}:`);
+    nomesDosPets.push(nomePet);
+  }
+  console.log("Nomes dos seus bichinhos de estimação:");
+  console.log(nomesDosPets);
+}
